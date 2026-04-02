@@ -109,9 +109,32 @@ function App() {
         </section>
       </main>
 
-      <footer style={{ padding: '4rem 2rem', borderTop: '1px solid var(--border)', textAlign: 'center', color: 'var(--text-muted)' }}>
+      <footer style={{ padding: '4rem 2rem 8rem', borderTop: '1px solid var(--border)', textAlign: 'center', color: 'var(--text-muted)' }}>
         <p>&copy; 2026 Gifter PWA - Made with ❤️ for the community</p>
       </footer>
+
+      {/* Bottom Navigation for PWA/Mobile */}
+      <nav className="bottom-nav">
+        <div className="nav-item active">
+          <span className="nav-icon">🏠</span>
+          <span className="nav-label">Home</span>
+        </div>
+        <div className="nav-item">
+          <span className="nav-icon">🔍</span>
+          <span className="nav-label">Cerca</span>
+        </div>
+        <div className="nav-item plus">
+          <div className="plus-button">+</div>
+        </div>
+        <div className="nav-item">
+          <span className="nav-icon">✉️</span>
+          <span className="nav-label">Inbox</span>
+        </div>
+        <div className="nav-item">
+          <span className="nav-icon">👤</span>
+          <span className="nav-label">Profilo</span>
+        </div>
+      </nav>
     </div>
   )
 }
